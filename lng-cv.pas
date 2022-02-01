@@ -1,6 +1,6 @@
 Program lngcv;
 
-   { LNG-CV VERSION 1.0.1 / THE MIT LICENSE (MIT) © 2022 PIOTR BAJDEK }
+   { LNG-CV VERSION 1.0.2 / THE MIT LICENSE (MIT) © 2022 PIOTR BAJDEK }
 
 Uses
    Crt, SysUtils;
@@ -23,8 +23,8 @@ Begin
    If INPUT1 = '--about' Then
    Begin
       Writeln('Program:  lng-cv');
-      Writeln('Version:  1.0.1');
-      Writeln('Date:     February 01, 2022');
+      Writeln('Version:  1.0.2');
+      Writeln('Date:     February 02, 2022');
       Writeln('Author:   Piotr Bajdek, Poland');
       Writeln('Contact:  piotr.bajdek@protonmail.com');
       Writeln('Source:   https://github.com/piotrbajdek/lng-cv');
@@ -122,8 +122,8 @@ Begin
 
    If INPUT1 = '--version' Then
    Begin
-      Writeln('Version: 1.0.1');
-      Writeln('February 01, 2022');
+      Writeln('Version: 1.0.2');
+      Writeln('February 02, 2022');
       Halt;
    End;
 
@@ -246,7 +246,7 @@ Begin
          STR89 := StringReplace(STR88, 'x', 'k͡s̺', [rfReplaceAll]);
          STR90 := StringReplace(STR89, 'ɡn', 'ŋn', [rfReplaceAll]);
          STR91 := StringReplace(STR90, 'ë', 'ɛ', [rfReplaceAll]);
-         STR92 := StringReplace(STR91, 'ü', 'ʊ', [rfReplaceAll]);
+         STR92 := StringReplace(STR91, 'ü', 'u̞', [rfReplaceAll]);
          STR93 := StringReplace(STR92, 'ĕr', 'ær', [rfReplaceAll]);
          STR94 := StringReplace(STR93, 'ie', 'īe', [rfReplaceAll]);
          STR95 := StringReplace(STR94, 'cum', 'kʉm', [rfReplaceAll]);
@@ -258,15 +258,15 @@ Begin
          STR101 := StringReplace(STR100, 'um?', 'ũː?', [rfReplaceAll]);
          STR102 := StringReplace(STR101, 'um!', 'ũː!', [rfReplaceAll]);
          STR103 := StringReplace(STR102, 'um·', 'ũː·', [rfReplaceAll]);
-         STR104 := StringReplace(STR103, 'em ', 'ẽː ', [rfReplaceAll]);
-         STR105 := StringReplace(STR104, 'em,', 'ẽː,', [rfReplaceAll]);
-         STR106 := StringReplace(STR105, 'em;', 'ẽː;', [rfReplaceAll]);
-         STR107 := StringReplace(STR106, 'em.', 'ẽː.', [rfReplaceAll]);
-         STR108 := StringReplace(STR107, 'em?', 'ẽː?', [rfReplaceAll]);
-         STR109 := StringReplace(STR108, 'em!', 'ẽː!', [rfReplaceAll]);
-         STR110 := StringReplace(STR109, 'em·', 'ẽː·', [rfReplaceAll]);
-         STR111 := StringReplace(STR110, 'ens', 'ẽːs̺', [rfReplaceAll]);
-         STR112 := StringReplace(STR111, 'ons', 'õːs̺', [rfReplaceAll]);
+         STR104 := StringReplace(STR103, 'em ', 'ɛ̝̃ː ', [rfReplaceAll]);
+         STR105 := StringReplace(STR104, 'em,', 'ɛ̝̃ː,', [rfReplaceAll]);
+         STR106 := StringReplace(STR105, 'em;', 'ɛ̝̃ː;', [rfReplaceAll]);
+         STR107 := StringReplace(STR106, 'em.', 'ɛ̝̃ː.', [rfReplaceAll]);
+         STR108 := StringReplace(STR107, 'em?', 'ɛ̝̃ː?', [rfReplaceAll]);
+         STR109 := StringReplace(STR108, 'em!', 'ɛ̝̃ː!', [rfReplaceAll]);
+         STR110 := StringReplace(STR109, 'em·', 'ɛ̝̃ː·', [rfReplaceAll]);
+         STR111 := StringReplace(STR110, 'ens', 'ɛ̝̃ːs̺', [rfReplaceAll]);
+         STR112 := StringReplace(STR111, 'ons', 'ɔ̝̃ːs̺', [rfReplaceAll]);
          STR113 := StringReplace(STR112, 'inf', 'ĩːf', [rfReplaceAll]);
          STR114 := StringReplace(STR113, 'ia', 'ja', [rfReplaceAll]);
          STR115 := StringReplace(STR114, 'ii', 'jː', [rfReplaceAll]);
@@ -281,18 +281,18 @@ Begin
          STR124 := StringReplace(STR123, 'oe', 'ɔɛ̯', [rfReplaceAll]);
          STR125 := StringReplace(STR124, 'i', 'i̞', [rfReplaceAll]);
          STR126 := StringReplace(STR125, 'o', 'ɔ', [rfReplaceAll]);
-         STR127 := StringReplace(STR126, 'u', 'ʊ', [rfReplaceAll]);
+         STR127 := StringReplace(STR126, 'u', 'u̞', [rfReplaceAll]);
          STR128 := StringReplace(STR127, 'y', 'ʏ', [rfReplaceAll]);
          STR129 := StringReplace(STR128, 'a', 'ɐ', [rfReplaceAll]);
          STR130 := StringReplace(STR129, 'e', 'ɛ', [rfReplaceAll]);
-         STR131 := StringReplace(STR130, 'ā', 'aː', [rfReplaceAll]);
-         STR132 := StringReplace(STR131, 'á', 'aː', [rfReplaceAll]);
-         STR133 := StringReplace(STR132, 'ē', 'eː', [rfReplaceAll]);
-         STR134 := StringReplace(STR133, 'é', 'eː', [rfReplaceAll]);
+         STR131 := StringReplace(STR130, 'ā', 'ɐː', [rfReplaceAll]);
+         STR132 := StringReplace(STR131, 'á', 'ɐː', [rfReplaceAll]);
+         STR133 := StringReplace(STR132, 'ē', 'ɛ̝ː', [rfReplaceAll]);
+         STR134 := StringReplace(STR133, 'é', 'ɛ̝ː', [rfReplaceAll]);
          STR135 := StringReplace(STR134, 'ī', 'iː', [rfReplaceAll]);
          STR136 := StringReplace(STR135, 'í', 'iː', [rfReplaceAll]);
-         STR137 := StringReplace(STR136, 'ō', 'oː', [rfReplaceAll]);
-         STR138 := StringReplace(STR137, 'ó', 'oː', [rfReplaceAll]);
+         STR137 := StringReplace(STR136, 'ō', 'ɔ̝ː', [rfReplaceAll]);
+         STR138 := StringReplace(STR137, 'ó', 'ɔ̝ː', [rfReplaceAll]);
          STR139 := StringReplace(STR138, 'ū', 'uː', [rfReplaceAll]);
          STR140 := StringReplace(STR139, 'ú', 'uː', [rfReplaceAll]);
          STR141 := StringReplace(STR140, 'ȳ', 'yː', [rfReplaceAll]);
@@ -301,7 +301,7 @@ Begin
          STR144 := StringReplace(STR143, 'ĕ', 'ɛ', [rfReplaceAll]);
          STR145 := StringReplace(STR144, 'ĭ', 'i̞', [rfReplaceAll]);
          STR146 := StringReplace(STR145, 'ŏ', 'ɔ', [rfReplaceAll]);
-         STR147 := StringReplace(STR146, 'ŭ', 'ʊ', [rfReplaceAll]);
+         STR147 := StringReplace(STR146, 'ŭ', 'u̞', [rfReplaceAll]);
          STR148 := StringReplace(STR147, 'y̆', 'ʏ', [rfReplaceAll]);
          STR149 := StringReplace(STR148, 'er', 'ær', [rfReplaceAll]);
          STR150 := StringReplace(STR149, ',', ' ∣', [rfReplaceAll]);
