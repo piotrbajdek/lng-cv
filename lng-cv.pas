@@ -1,6 +1,6 @@
 Program lngcv;
 
-   { LNG-CV VERSION 1.0.3 / THE MIT LICENSE (MIT) © 2022 PIOTR BAJDEK }
+   { LNG-CV VERSION 1.0.4 / THE MIT LICENSE (MIT) © 2022 PIOTR BAJDEK }
 
 Uses
    Crt, SysUtils;
@@ -23,7 +23,7 @@ Begin
    If INPUT1 = '--about' Then
    Begin
       Writeln('Program:  lng-cv');
-      Writeln('Version:  1.0.3');
+      Writeln('Version:  1.0.4');
       Writeln('Date:     February 04, 2022');
       Writeln('Author:   Piotr Bajdek, Poland');
       Writeln('Contact:  piotr.bajdek@protonmail.com');
@@ -122,7 +122,7 @@ Begin
 
    If INPUT1 = '--version' Then
    Begin
-      Writeln('Version: 1.0.3');
+      Writeln('Version: 1.0.4');
       Writeln('February 04, 2022');
       Halt;
    End;
@@ -1009,7 +1009,7 @@ Begin
          STR44 := StringReplace(STR43, 'cua', 'qua', [rfReplaceAll]);
          STR45 := StringReplace(STR44, 'Cua', 'Qua', [rfReplaceAll]);
          STR46 := StringReplace(STR45, 'CUA', 'QUA', [rfReplaceAll]);
-         STR47 := StringReplace(STR46, 'cua’', 'qua’', [rfReplaceAll]);
+         STR47 := StringReplace(STR46, 'cua̱', 'qua’', [rfReplaceAll]);
          STR48 := StringReplace(STR47, 'Cua̱', 'Qua’', [rfReplaceAll]);
          STR49 := StringReplace(STR48, 'CUA̱', 'QUA’', [rfReplaceAll]);
          STR50 := StringReplace(STR49, 'kua', 'qua', [rfReplaceAll]);
@@ -1216,7 +1216,7 @@ Begin
          STR65 := StringReplace(STR64, 'ü̱''', 'ü̱x', [rfReplaceAll]);
          STR66 := StringReplace(STR65, 'ü̱̃''', 'ü̱̃x', [rfReplaceAll]);
          STR67 := StringReplace(STR66, 'ǘ''', 'ǘx', [rfReplaceAll]);
-         STR68 := StringReplace(STR67, '''', 'X', [rfReplaceAll]);
+         STR68 := StringReplace(STR67, '''', 'x', [rfReplaceAll]);
          STR69 := StringReplace(STR68, 'a’', 'ax', [rfReplaceAll]);
          STR70 := StringReplace(STR69, 'ã’', 'ãx', [rfReplaceAll]);
          STR71 := StringReplace(STR70, 'a̱’', 'a̱x', [rfReplaceAll]);
@@ -1247,7 +1247,7 @@ Begin
          STR96 := StringReplace(STR95, 'ü̱’', 'ü̱x', [rfReplaceAll]);
          STR97 := StringReplace(STR96, 'ü̱̃’', 'ü̱̃x', [rfReplaceAll]);
          STR98 := StringReplace(STR97, 'ǘ’', 'ǘx', [rfReplaceAll]);
-         STR99 := StringReplace(STR98, '’', 'X', [rfReplaceAll]);
+         STR99 := StringReplace(STR98, '’', 'x', [rfReplaceAll]);
          Writeln('');
          TextColor(7);
          Writeln('Peru (ILV):');
@@ -1325,19 +1325,19 @@ Begin
          STR68 := StringReplace(STR67, 'ü̃''', 'ü̃x', [rfReplaceAll]);
          STR69 := StringReplace(STR68, 'ü̱''', 'üx', [rfReplaceAll]);
          STR70 := StringReplace(STR69, 'ü̱̃''', 'ü̃x', [rfReplaceAll]);
-         STR71 := StringReplace(STR70, 'A̱', 'A', [rfReplaceAll]);
-         STR72 := StringReplace(STR71, 'Ã̱', 'Ã', [rfReplaceAll]);
-         STR73 := StringReplace(STR72, 'E̱', 'E', [rfReplaceAll]);
-         STR74 := StringReplace(STR73, 'Ẽ̱', 'Ẽ', [rfReplaceAll]);
-         STR75 := StringReplace(STR74, 'I̱', 'I', [rfReplaceAll]);
-         STR76 := StringReplace(STR75, 'Ĩ̱', 'Ĩ', [rfReplaceAll]);
-         STR77 := StringReplace(STR76, 'O̱', 'O', [rfReplaceAll]);
-         STR78 := StringReplace(STR77, 'Õ̱', 'Õ', [rfReplaceAll]);
-         STR79 := StringReplace(STR78, 'U̱', 'U', [rfReplaceAll]);
-         STR80 := StringReplace(STR79, 'Ũ̱', 'Ũ', [rfReplaceAll]);
-         STR81 := StringReplace(STR80, 'Ü̱', 'Ü', [rfReplaceAll]);
-         STR82 := StringReplace(STR81, 'Ü̱̃', 'Ü̃', [rfReplaceAll]);
-         STR83 := StringReplace(STR82, '''', 'X', [rfReplaceAll]);
+         STR71 := StringReplace(STR70, 'A̱', 'AX', [rfReplaceAll]);
+         STR72 := StringReplace(STR71, 'Ã̱', 'ÃX', [rfReplaceAll]);
+         STR73 := StringReplace(STR72, 'E̱', 'EX', [rfReplaceAll]);
+         STR74 := StringReplace(STR73, 'Ẽ̱', 'ẼX', [rfReplaceAll]);
+         STR75 := StringReplace(STR74, 'I̱', 'IX', [rfReplaceAll]);
+         STR76 := StringReplace(STR75, 'Ĩ̱', 'ĨX', [rfReplaceAll]);
+         STR77 := StringReplace(STR76, 'O̱', 'OX', [rfReplaceAll]);
+         STR78 := StringReplace(STR77, 'Õ̱', 'ÕX', [rfReplaceAll]);
+         STR79 := StringReplace(STR78, 'U̱', 'UX', [rfReplaceAll]);
+         STR80 := StringReplace(STR79, 'Ũ̱', 'ŨX', [rfReplaceAll]);
+         STR81 := StringReplace(STR80, 'Ü̱', 'ÜX', [rfReplaceAll]);
+         STR82 := StringReplace(STR81, 'Ü̱̃', 'Ü̃X', [rfReplaceAll]);
+         STR83 := StringReplace(STR82, '''', 'x', [rfReplaceAll]);
          STR84 := StringReplace(STR83, 'a’', 'ax', [rfReplaceAll]);
          STR85 := StringReplace(STR84, 'ã’', 'ãx', [rfReplaceAll]);
          STR86 := StringReplace(STR85, 'a̱’', 'ax', [rfReplaceAll]);
@@ -1362,7 +1362,7 @@ Begin
          STR105 := StringReplace(STR104, 'ü̃’', 'ü̃x', [rfReplaceAll]);
          STR106 := StringReplace(STR105, 'ü̱’', 'üx', [rfReplaceAll]);
          STR107 := StringReplace(STR106, 'ü̱̃’', 'ü̃x', [rfReplaceAll]);
-         STR108 := StringReplace(STR107, '’', 'X', [rfReplaceAll]);
+         STR108 := StringReplace(STR107, '’', 'x', [rfReplaceAll]);
          Writeln('');
          TextColor(7);
          Writeln('Peru (FORMABIAP):');
