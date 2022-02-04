@@ -1,13 +1,13 @@
 Program lngcv;
 
-   { LNG-CV VERSION 1.0.2 / THE MIT LICENSE (MIT) © 2022 PIOTR BAJDEK }
+   { LNG-CV VERSION 1.0.3 / THE MIT LICENSE (MIT) © 2022 PIOTR BAJDEK }
 
 Uses
    Crt, SysUtils;
 
 Var
    INPUT1, INPUT2, INPUT3: String;
-   STR1, STR2, STR3, STR4, STR5, STR6, STR7, STR8, STR9, STR10, STR11, STR12, STR13, STR14, STR15, STR16, STR17, STR18, STR19, STR20, STR21, STR22, STR23, STR24, STR25, STR26, STR27, STR28, STR29, STR30, STR31, STR32, STR33, STR34, STR35, STR36, STR37, STR38, STR39, STR40, STR41, STR42, STR43, STR44, STR45, STR46, STR47, STR48, STR49, STR50, STR51, STR52, STR53, STR54, STR55, STR56, STR57, STR58, STR59, STR60, STR61, STR62, STR63, STR64, STR65, STR66, STR67, STR68, STR69, STR70, STR71, STR72, STR73, STR74, STR75, STR76, STR77, STR78, STR79, STR80, STR81, STR82, STR83, STR84, STR85, STR86, STR87, STR88, STR89, STR90, STR91, STR92, STR93, STR94, STR95, STR96, STR97, STR98, STR99, STR100, STR101, STR102, STR103, STR104, STR105, STR106, STR107, STR108, STR109, STR110, STR111, STR112, STR113, STR114, STR115, STR116, STR117, STR118, STR119, STR120, STR121, STR122, STR123, STR124, STR125, STR126, STR127, STR128, STR129, STR130, STR131, STR132, STR133, STR134, STR135, STR136, STR137, STR138, STR139, STR140, STR141, STR142, STR143, STR144, STR145, STR146, STR147, STR148, STR149, STR150, STR151, STR152, STR153, STR154, STR155, STR156, STR157, STR158, STR159, STR160: String;
+   STR1, STR2, STR3, STR4, STR5, STR6, STR7, STR8, STR9, STR10, STR11, STR12, STR13, STR14, STR15, STR16, STR17, STR18, STR19, STR20, STR21, STR22, STR23, STR24, STR25, STR26, STR27, STR28, STR29, STR30, STR31, STR32, STR33, STR34, STR35, STR36, STR37, STR38, STR39, STR40, STR41, STR42, STR43, STR44, STR45, STR46, STR47, STR48, STR49, STR50, STR51, STR52, STR53, STR54, STR55, STR56, STR57, STR58, STR59, STR60, STR61, STR62, STR63, STR64, STR65, STR66, STR67, STR68, STR69, STR70, STR71, STR72, STR73, STR74, STR75, STR76, STR77, STR78, STR79, STR80, STR81, STR82, STR83, STR84, STR85, STR86, STR87, STR88, STR89, STR90, STR91, STR92, STR93, STR94, STR95, STR96, STR97, STR98, STR99, STR100, STR101, STR102, STR103, STR104, STR105, STR106, STR107, STR108, STR109, STR110, STR111, STR112, STR113, STR114, STR115, STR116, STR117, STR118, STR119, STR120, STR121, STR122, STR123, STR124, STR125, STR126, STR127, STR128, STR129, STR130, STR131, STR132, STR133, STR134, STR135, STR136, STR137, STR138, STR139, STR140, STR141, STR142, STR143, STR144, STR145, STR146, STR147, STR148, STR149, STR150, STR151, STR152, STR153, STR154, STR155, STR156, STR157, STR158, STR159, STR160, STR161, STR162, STR163: String;
 
 Label
    HELP;
@@ -23,8 +23,8 @@ Begin
    If INPUT1 = '--about' Then
    Begin
       Writeln('Program:  lng-cv');
-      Writeln('Version:  1.0.2');
-      Writeln('Date:     February 02, 2022');
+      Writeln('Version:  1.0.3');
+      Writeln('Date:     February 04, 2022');
       Writeln('Author:   Piotr Bajdek, Poland');
       Writeln('Contact:  piotr.bajdek@protonmail.com');
       Writeln('Source:   https://github.com/piotrbajdek/lng-cv');
@@ -82,7 +82,7 @@ Begin
       Writeln('          The modern spelling of Latin and the ancient convention can be used');
       Writeln('          indifferently in the --ipa mode. To mark the duration of vowels,');
       Writeln('          type either apices or macrons. In the --ort mode, the text is');
-      Writeln('          transcribed into the ancient convention (before the 2nd c. AC).');
+      Writeln('          transcribed into the ancient convention (before the 2nd c. AD).');
       Writeln('');
       TextColor(15);
       Writeln('Quechua:');
@@ -122,8 +122,8 @@ Begin
 
    If INPUT1 = '--version' Then
    Begin
-      Writeln('Version: 1.0.2');
-      Writeln('February 02, 2022');
+      Writeln('Version: 1.0.3');
+      Writeln('February 04, 2022');
       Halt;
    End;
 
@@ -303,23 +303,26 @@ Begin
          STR146 := StringReplace(STR145, 'ŏ', 'ɔ', [rfReplaceAll]);
          STR147 := StringReplace(STR146, 'ŭ', 'u̞', [rfReplaceAll]);
          STR148 := StringReplace(STR147, 'y̆', 'ʏ', [rfReplaceAll]);
-         STR149 := StringReplace(STR148, 'er', 'ær', [rfReplaceAll]);
+         STR149 := StringReplace(STR148, 'ɛr', 'ær', [rfReplaceAll]);
          STR150 := StringReplace(STR149, ',', ' ∣', [rfReplaceAll]);
          STR151 := StringReplace(STR150, ';', ' ∥', [rfReplaceAll]);
          STR152 := StringReplace(STR151, ':', ' ∣', [rfReplaceAll]);
-         STR153 := StringReplace(STR152, '.', ' ∥', [rfReplaceAll]);
-         STR154 := StringReplace(STR153, '!', ' ∥', [rfReplaceAll]);
-         STR155 := StringReplace(STR154, '?', ' ∥', [rfReplaceAll]);
-         STR156 := StringReplace(STR155, '(', '∣ ', [rfReplaceAll]);
-         STR157 := StringReplace(STR156, ')', ' ∣', [rfReplaceAll]);
-         STR158 := StringReplace(STR157, '·', ' ', [rfReplaceAll]);
-         STR159 := StringReplace(STR158, ' - ', ' ∣ ', [rfReplaceAll]);
-         STR160 := StringReplace(STR159, ' – ', ' ∣ ', [rfReplaceAll]);
+         STR153 := StringReplace(STR152, '. ', ' ∥ ', [rfReplaceAll]);
+         STR154 := StringReplace(STR153, '.', '', [rfReplaceAll]);
+         STR155 := StringReplace(STR154, '! ', ' ∥ ', [rfReplaceAll]);
+         STR156 := StringReplace(STR155, '!', '', [rfReplaceAll]);
+         STR157 := StringReplace(STR156, '? ', ' ∥ ', [rfReplaceAll]);
+         STR158 := StringReplace(STR157, '?', '', [rfReplaceAll]);
+         STR159 := StringReplace(STR158, '(', '∣ ', [rfReplaceAll]);
+         STR160 := StringReplace(STR159, ')', ' ∣', [rfReplaceAll]);
+         STR161 := StringReplace(STR160, '·', ' ', [rfReplaceAll]);
+         STR162 := StringReplace(STR161, ' - ', ' ∣ ', [rfReplaceAll]);
+         STR163 := StringReplace(STR162, ' – ', ' ∣ ', [rfReplaceAll]);
          Writeln('');
          Writeln('Classical Latin:');
          Writeln('');
          TextColor(15);
-         Writeln('   ',STR156);
+         Writeln('   ',STR163);
          TextColor(7);
          Writeln('');
          Halt;
@@ -469,25 +472,28 @@ Begin
          STR129 := StringReplace(STR128, 'U', 'ʉ̱', [rfReplaceAll]);
          STR130 := StringReplace(STR129, 'Ü', 'ɨ̱', [rfReplaceAll]);
          STR131 := StringReplace(STR130, 'ʉ̱̰', 'ṵ', [rfReplaceAll]);
-         STR132 := StringReplace(STR131, '.', ' ∥', [rfReplaceAll]);
-         STR133 := StringReplace(STR132, ',', ' ∣', [rfReplaceAll]);
-         STR134 := StringReplace(STR133, ';', ' ∥', [rfReplaceAll]);
-         STR135 := StringReplace(STR134, ':', ' ∣', [rfReplaceAll]);
-         STR136 := StringReplace(STR135, '?', ' ∥', [rfReplaceAll]);
-         STR137 := StringReplace(STR136, '¿', '', [rfReplaceAll]);
-         STR138 := StringReplace(STR137, '!', ' ∥', [rfReplaceAll]);
-         STR139 := StringReplace(STR138, '¡', '', [rfReplaceAll]);
-         STR140 := StringReplace(STR139, ' - ', ' ∣ ', [rfReplaceAll]);
-         STR141 := StringReplace(STR140, ' – ', ' ∣ ', [rfReplaceAll]);
-         STR142 := StringReplace(STR141, '(', '∣ ', [rfReplaceAll]);
-         STR143 := StringReplace(STR142, ')', ' ∣', [rfReplaceAll]);
-         STR144 := StringReplace(STR143, 'n̪̪ɡ', 'ŋ', [rfReplaceAll]);
+         STR132 := StringReplace(STR131, 'n̪̪ɡ', 'ŋ', [rfReplaceAll]);
+         STR133 := StringReplace(STR132, '. ', ' ∥ ', [rfReplaceAll]);
+         STR134 := StringReplace(STR133, '.', '', [rfReplaceAll]);
+         STR135 := StringReplace(STR134, ',', ' ∣', [rfReplaceAll]);
+         STR136 := StringReplace(STR135, ';', ' ∥', [rfReplaceAll]);
+         STR137 := StringReplace(STR136, ':', ' ∣', [rfReplaceAll]);
+         STR138 := StringReplace(STR137, '? ', ' ∥ ', [rfReplaceAll]);
+         STR139 := StringReplace(STR138, '?', '', [rfReplaceAll]);
+         STR140 := StringReplace(STR139, '¿', '', [rfReplaceAll]);
+         STR141 := StringReplace(STR140, '! ', ' ∥ ', [rfReplaceAll]);
+         STR142 := StringReplace(STR141, '!', '', [rfReplaceAll]);
+         STR143 := StringReplace(STR142, '¡', '', [rfReplaceAll]);
+         STR144 := StringReplace(STR143, ' - ', ' ∣ ', [rfReplaceAll]);
+         STR145 := StringReplace(STR144, ' – ', ' ∣ ', [rfReplaceAll]);
+         STR146 := StringReplace(STR145, '(', '∣ ', [rfReplaceAll]);
+         STR147 := StringReplace(STR146, ')', ' ∣', [rfReplaceAll]);
          Writeln('');
          TextColor(7);
-         Writeln('Central Tikuna (Nazareth, Colombia):');
+         Writeln('Central Tikuna (Nazareth, CO):');
          Writeln('');
          TextColor(15);
-         Writeln('   ',STR144);
+         Writeln('   ',STR147);
    { IPA: UMARIAÇU }
          STR1 := INPUT3;
          STR2 := StringReplace(STR1, '1', '˩', [rfReplaceAll]);
@@ -621,25 +627,28 @@ Begin
          STR130 := StringReplace(STR129, 'O', 'ɔ̝', [rfReplaceAll]);
          STR131 := StringReplace(STR130, 'U', 'ʊ', [rfReplaceAll]);
          STR132 := StringReplace(STR131, 'Ü', 'ɯ̈', [rfReplaceAll]);
-         STR133 := StringReplace(STR132, '.', ' ∥', [rfReplaceAll]);
-         STR134 := StringReplace(STR133, ',', ' ∣', [rfReplaceAll]);
-         STR135 := StringReplace(STR134, ';', ' ∥', [rfReplaceAll]);
-         STR136 := StringReplace(STR135, ':', ' ∣', [rfReplaceAll]);
-         STR137 := StringReplace(STR136, '?', ' ∥', [rfReplaceAll]);
-         STR138 := StringReplace(STR137, '¿', '', [rfReplaceAll]);
-         STR139 := StringReplace(STR138, '!', ' ∥', [rfReplaceAll]);
-         STR140 := StringReplace(STR139, '¡', '', [rfReplaceAll]);
-         STR141 := StringReplace(STR140, ' - ', ' ∣ ', [rfReplaceAll]);
-         STR142 := StringReplace(STR141, ' – ', ' ∣ ', [rfReplaceAll]);
-         STR143 := StringReplace(STR142, '(', '∣ ', [rfReplaceAll]);
-         STR144 := StringReplace(STR143, ')', ' ∣', [rfReplaceAll]);
-         STR145 := StringReplace(STR144, 'n̪̪ɣ', 'ŋ', [rfReplaceAll]);
+         STR133 := StringReplace(STR132, 'n̪̪ɣ', 'ŋ', [rfReplaceAll]);
+         STR134 := StringReplace(STR133, '. ', ' ∥ ', [rfReplaceAll]);
+         STR135 := StringReplace(STR134, '.', '', [rfReplaceAll]);
+         STR136 := StringReplace(STR135, ',', ' ∣', [rfReplaceAll]);
+         STR137 := StringReplace(STR136, ';', ' ∥', [rfReplaceAll]);
+         STR138 := StringReplace(STR137, ':', ' ∣', [rfReplaceAll]);
+         STR139 := StringReplace(STR138, '? ', ' ∥ ', [rfReplaceAll]);
+         STR140 := StringReplace(STR139, '?', '', [rfReplaceAll]);
+         STR141 := StringReplace(STR140, '¿', '', [rfReplaceAll]);
+         STR142 := StringReplace(STR141, '! ', ' ∥ ', [rfReplaceAll]);
+         STR143 := StringReplace(STR142, '!', '', [rfReplaceAll]);
+         STR144 := StringReplace(STR143, '¡', '', [rfReplaceAll]);
+         STR145 := StringReplace(STR144, ' - ', ' ∣ ', [rfReplaceAll]);
+         STR146 := StringReplace(STR145, ' – ', ' ∣ ', [rfReplaceAll]);
+         STR147 := StringReplace(STR146, '(', '∣ ', [rfReplaceAll]);
+         STR148 := StringReplace(STR147, ')', ' ∣', [rfReplaceAll]);
          Writeln('');
          TextColor(7);
-         Writeln('Eastern Tikuna (Umariaçu, Brazil):');
+         Writeln('Eastern Tikuna (Umariaçu, BR):');
          Writeln('');
          TextColor(15);
-         Writeln('   ',STR145);
+         Writeln('   ',STR148);
          TextColor(7);
          Writeln('');
          Halt;
@@ -704,8 +713,8 @@ Begin
          STR27 := StringReplace(STR26, ' axe.', ' ax.', [rfReplaceAll]);
          STR28 := StringReplace(STR27, 'cheque', 'check', [rfReplaceAll]);
          STR29 := StringReplace(STR28, 'cumquat', 'kumquat', [rfReplaceAll]);
-         STR30 := StringReplace(STR29, 'fulfil ', 'fulfill ', [rfReplaceAll]);
-         STR31 := StringReplace(STR30, 'Fulfil ', 'Fulfill ', [rfReplaceAll]);
+         STR30 := StringReplace(STR29, 'fulfil', 'fulfill', [rfReplaceAll]);
+         STR31 := StringReplace(STR30, 'Fulfil', 'Fulfill', [rfReplaceAll]);
          STR32 := StringReplace(STR31, 'grey', 'gray', [rfReplaceAll]);
          STR33 := StringReplace(STR32, 'Grey', 'Gray', [rfReplaceAll]);
          STR34 := StringReplace(STR33, 'kerb', 'curb', [rfReplaceAll]);
@@ -742,7 +751,7 @@ Begin
          STR65 := StringReplace(STR64, ' AXE.', ' AX.', [rfReplaceAll]);
          STR66 := StringReplace(STR65, 'CHEQUE', 'CHECK', [rfReplaceAll]);
          STR67 := StringReplace(STR66, 'CUMQUAT', 'KUMQUAT', [rfReplaceAll]);
-         STR68 := StringReplace(STR67, 'FULFIL ', 'FULFILL ', [rfReplaceAll]);
+         STR68 := StringReplace(STR67, 'FULFIL', 'FULFILL', [rfReplaceAll]);
          STR69 := StringReplace(STR68, 'GREY', 'GRAY', [rfReplaceAll]);
          STR70 := StringReplace(STR69, 'KERB', 'CURB', [rfReplaceAll]);
          STR71 := StringReplace(STR70, 'MOUSTACHE', 'MUSTACHE', [rfReplaceAll]);
@@ -751,11 +760,14 @@ Begin
          STR74 := StringReplace(STR73, 'MUM.', 'MOM.', [rfReplaceAll]);
          STR75 := StringReplace(STR74, 'PROGRAMME', 'PROGRAM', [rfReplaceAll]);
          STR76 := StringReplace(STR75, 'SCEPTICAL', 'SKEPTICAL', [rfReplaceAll]);
+         STR77 := StringReplace(STR76, 'fulfilll', 'fulfill', [rfReplaceAll]);
+         STR78 := StringReplace(STR77, 'Fulfilll', 'Fulfill', [rfReplaceAll]);
+         STR79 := StringReplace(STR78, 'FULFILLL', 'FULFILL', [rfReplaceAll]);
          Writeln('');
-         Writeln('Spelling of American English:');
+         Writeln('American English:');
          Writeln('');
          TextColor(15);
-         Writeln('   ',STR76);
+         Writeln('   ',STR79);
          TextColor(7);
          Writeln('');
          Halt;
@@ -831,9 +843,9 @@ Begin
          STR55 := StringReplace(STR54, '. ', '·', [rfReplaceAll]);
          STR56 := StringReplace(STR55, '! ', '·', [rfReplaceAll]);
          STR57 := StringReplace(STR56, '? ', '·', [rfReplaceAll]);
-         STR58 := StringReplace(STR57, '.', '·', [rfReplaceAll]);
-         STR59 := StringReplace(STR58, '!', '·', [rfReplaceAll]);
-         STR60 := StringReplace(STR59, '?', '·', [rfReplaceAll]);
+         STR58 := StringReplace(STR57, '.', '', [rfReplaceAll]);
+         STR59 := StringReplace(STR58, '!', '', [rfReplaceAll]);
+         STR60 := StringReplace(STR59, '?', '', [rfReplaceAll]);
          STR61 := StringReplace(STR60, ' ', '·', [rfReplaceAll]);
          STR62 := StringReplace(STR61, 'Ă', 'A', [rfReplaceAll]);
          STR63 := StringReplace(STR62, 'Ā', 'Á', [rfReplaceAll]);
@@ -879,7 +891,7 @@ Begin
          STR4 := StringReplace(STR3, 'e', 'i', [rfReplaceAll]);
          STR5 := StringReplace(STR4, 'E', 'I', [rfReplaceAll]);
          Writeln('');
-         Writeln('Trivocalic orthographic convention:');
+         Writeln('Trivocalic:');
          Writeln('');
          TextColor(15);
          Writeln('   ',STR5);
@@ -929,7 +941,7 @@ Begin
          STR43 := StringReplace(STR42, 'IQ', 'EQ', [rfReplaceAll]);
          Writeln('');
          TextColor(7);
-         Writeln('Pentavocalic orthographic convention:');
+         Writeln('Pentavocalic:');
          Writeln('');
          TextColor(15);
          Writeln('   ',STR31);
@@ -1099,7 +1111,7 @@ Begin
          STR146 := StringReplace(STR145, 'Ǘx', 'Ǘ’', [rfReplaceAll]);
          STR147 := StringReplace(STR146, 'Ttch', 'Tch', [rfReplaceAll]);
          Writeln('');
-         Writeln('Brazilian orthography:');
+         Writeln('Brazil:');
          Writeln('');
          TextColor(15);
          Writeln('   ',STR147);
@@ -1132,7 +1144,7 @@ Begin
          STR26 := StringReplace(STR25, '’', '', [rfReplaceAll]);
          Writeln('');
          TextColor(7);
-         Writeln('Colombian orthography:');
+         Writeln('Colombia:');
          Writeln('');
          TextColor(15);
          Writeln('   ',STR26);
@@ -1238,7 +1250,7 @@ Begin
          STR99 := StringReplace(STR98, '’', 'X', [rfReplaceAll]);
          Writeln('');
          TextColor(7);
-         Writeln('Peruvian orthography (ILV):');
+         Writeln('Peru (ILV):');
          Writeln('');
          TextColor(15);
          Writeln('   ',STR99);
@@ -1353,7 +1365,7 @@ Begin
          STR108 := StringReplace(STR107, '’', 'X', [rfReplaceAll]);
          Writeln('');
          TextColor(7);
-         Writeln('Peruvian orthography (FORMABIAP):');
+         Writeln('Peru (FORMABIAP):');
          Writeln('');
          TextColor(15);
          Writeln('   ',STR108);
@@ -1364,11 +1376,11 @@ Begin
 
    End;
 
-   { INCORRECT FIRST PARAMETER }
+   { INCORRECT FIRST ARGUMENT }
 
 Begin
    TextColor(4);
-   Writeln('Error:    Invalid parameters provided!');
+   Writeln('Error:    Invalid arguments provided!');
    Writeln('');
    GoTo HELP;
 End;
